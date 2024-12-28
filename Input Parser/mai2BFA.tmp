@@ -50,18 +50,18 @@ region_filter_clip_enabled = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HoldenTappsMouse/InputReticle"]
 shape = SubResource("CapsuleShape2D_ovhni")
 
-[node name="Cursor" type="CharacterBody2D" parent="HoldenTappsMouse"]
+[node name="Cursor" type="CharacterBody2D" parent="."]
 unique_name_in_owner = true
 position = Vector2(576, 324)
 motion_mode = 1
 
-[node name="Sprite2D" type="Sprite2D" parent="HoldenTappsMouse/Cursor"]
+[node name="Sprite2D" type="Sprite2D" parent="Cursor"]
 texture = ExtResource("3_iig5t")
 region_enabled = true
 region_rect = Rect2(19, 20, 90, 90)
 region_filter_clip_enabled = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="HoldenTappsMouse/Cursor"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cursor"]
 shape = SubResource("CapsuleShape2D_ovhni")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]

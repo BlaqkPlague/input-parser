@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://d2rw7mi1gxs2o"]
 
-[ext_resource type="Script" path="res://scripts/input_manager_v2.gd" id="1_thaxi"]
+[ext_resource type="Script" path="res://scripts/input_manager.gd" id="1_hi16i"]
 [ext_resource type="Script" path="res://scripts/double_tap.gd" id="2_m68g0"]
 [ext_resource type="Script" path="res://scripts/ht_keyboard.gd" id="3_hfjfm"]
 [ext_resource type="Texture2D" uid="uid://brtsmny101ph" path="res://icon.svg" id="3_iig5t"]
@@ -18,7 +18,7 @@ default_font_size = 32
 [node name="Main" type="Node2D"]
 
 [node name="InputManager" type="Node" parent="."]
-script = ExtResource("1_thaxi")
+script = ExtResource("1_hi16i")
 
 [node name="DoubleTapDetector" type="Node" parent="InputManager"]
 script = ExtResource("2_m68g0")
@@ -50,18 +50,18 @@ region_filter_clip_enabled = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HoldenTappsMouse/InputReticle"]
 shape = SubResource("CapsuleShape2D_ovhni")
 
-[node name="Cursor" type="CharacterBody2D" parent="HoldenTappsMouse"]
+[node name="Cursor" type="CharacterBody2D" parent="."]
 unique_name_in_owner = true
 position = Vector2(576, 324)
 motion_mode = 1
 
-[node name="Sprite2D" type="Sprite2D" parent="HoldenTappsMouse/Cursor"]
+[node name="Sprite2D" type="Sprite2D" parent="Cursor"]
 texture = ExtResource("3_iig5t")
 region_enabled = true
 region_rect = Rect2(19, 20, 90, 90)
 region_filter_clip_enabled = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="HoldenTappsMouse/Cursor"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cursor"]
 shape = SubResource("CapsuleShape2D_ovhni")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
