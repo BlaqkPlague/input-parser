@@ -62,5 +62,5 @@ Hold-'n-Tap could be overridden to select individual targets, such as drawing to
 UI prototypes and logic algorithms:
 https://docs.google.com/spreadsheets/d/11ZasU6SsW0488Rrf_8ldaaRqrJTthsaj1k0YS68oRq0/
 
-Holden Tapp's Mouse state machine logic.
+Holden Tapp's Mouse state machine flowcharg.
 https://app.milanote.com/1TfjzO107sYC7k/holden-tapps-mouse-state-machine
